@@ -1,1 +1,1 @@
-R programing and manipulting E.coli meta data obtained from an experiment to study citrate utilising mutants.
+R programing and manipulting  meta data to practice various function in RStudio.
