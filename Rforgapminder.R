@@ -82,3 +82,77 @@ another_coercion_vector <- c(0, TRUE)
 cats$likes_catnip
 cats$likes_catnip <- as.logical(cats$likes_catnip)
 cats$likes_catnip
+pizza_price <- c( pizzasubito = 5.64, pizzafresh = 6.60, callapizza = 4.5)
+pizza_price["pizzasubito"]
+install.packages("usethis")
+names(pizza_price)
+library(usethis)
+names(pizza_price)[3]
+names(pizza_price)[3] <- "call-a-pizza"
+pizza_price
+str(pizza_price)
+typeof(pizza_price)
+n <- names(pizza_price)
+typeof(n)
+letter_no <-1:26
+names(letter_no) <-LETTERS
+letter_no["B"]
+cats
+cats2
+typeof(cats)
+class(cats)
+class$coat
+cats[,1]
+cats[1,]
+str(cats[1,])
+cats[1]
+cats[[1]]
+cats$coat
+cats["coat"]
+names(cats)
+names(cats)[2] <- "weight_kg"
+cats
+names(cats)[3] <- "logical"
+cats
+matrix_example <- matrix(1, ncol = 9, nrow = 5)
+matrix_example
+dim(matrix_example)
+typeof(matrix_example)
+str(matrix_example)
+length(matrix_example)
+matrix_personal <-matrix(1, ncol = 5, nrow = 10)
+dataTypes <- c('double', 'complex', 'integer', 'character', 'logical')
+dataStructures <- c('data.frame', 'vector', 'list', 'matrix')
+answer <- list(dataTypes, dataStructures)
+matrix(c(4, 1, 9, 5, 10, 7), nrow = 3)
+matrix(c(4, 9, 10, 1, 5, 7), ncol = 2, byrow = TRUE)
+matrix(c(4, 9, 10, 1, 5, 7), nrow = 2)
+matrix(c(4, 1, 9, 5, 10, 7), ncol = 2, byrow = TRUE)
+age <- c(2, 3, 5)
+cats
+cbind(cats, age)
+nrow(cats)
+length(age)
+age <- c(2, 3, 5)
+cats <- cbind(cats, age)
+newRow <- list("tortoiseshell", 3.3, TRUE, 9)
+cats <- rbind(cats, newRow)
+cats
+cats[-4, ]
+cats[,-4]
+cats[-2,-2]
+drop <- names(cats) %in% c("age")
+cats[,!drop]
+df <- data.frame(id = c("a", "b", "c"),
+                 x = 1:3,
+                 y = c(TRUE, TRUE, FALSE))
+df1 <- data.frame(first = c("Grace"),
+                  last = ("Hopper"),
+                  lucky_number = c(7))
+gapminder <- read.csv("data/gapminder_data.csv")
+gapminder <- read.csv("data/gapminder_data.csv")
+library(readr)
+gapminder_data <- read_csv("gapminder_data.csv")
+View(gapminder_data)
+download.file("https://raw.githubusercontent.com/swcarpentry/r-novice-gapminder/main/episodes/data/gapminder_data.csv", destfile = "data/gapminder_data.csv")
+gapminder <- read.csv("data/gapminder_data.csv")
